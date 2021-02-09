@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from responsivewebsite import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("2breaks",views.products,name="2breaks")
 ]
